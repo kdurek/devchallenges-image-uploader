@@ -1,12 +1,16 @@
 import Head from "next/head"
+import CardSuccess from "../../components/CardSuccess"
+import CardUpload from "../../components/CardUpload"
+import Loader from "../../components/Loader"
 
 const Home = () => {
   return (
-    <div className="">
+    <div className="w-screen h-screen flex items-center justify-center bg-gray-cFAFAFB">
       <Head>
-        <title>STARTER_CHANGE_ME</title>
+        <title>Image Uploader</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Poppins:wght@300;500;700&family=Roboto:wght@400;500;700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
           rel="stylesheet"
         />
         <link
@@ -15,27 +19,11 @@ const Home = () => {
         />
       </Head>
 
-      <main className="">
-        <h1 className="">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>p
-        </h1>
-
-        <span class="material-icons">donut_small</span>
-        <span class="material-icons-outlined">donut_small</span>
-        <span class="material-icons-two-tone">donut_small</span>
-        <span class="material-icons-round">donut_small</span>
-        <span class="material-icons-sharp">donut_small</span>
+      <main className="p-8 w-96 rounded-xl shadow-md bg-white">
+        {/* <CardUpload /> */}
+        {/* <Loader /> */}
+        {/* <CardSuccess /> */}
       </main>
-
-      <footer className="">
-        <a
-          href="http://localhost:3000/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          STARTER_CHANGE_ME
-        </a>
-      </footer>
     </div>
   )
 }
