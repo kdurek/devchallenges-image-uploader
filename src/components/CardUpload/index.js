@@ -8,7 +8,7 @@ const CardUpload = ({ uploadFile }) => {
     e.stopPropagation()
     e.preventDefault()
 
-    if (e.dataTransfer.items) {
+    if (e.dataTransfer.items.length === 1) {
       // Use DataTransferItemList interface to access the file(s)
       for (let i = 0; i < e.dataTransfer.items.length; i++) {
         // If dropped items aren't files, reject them
@@ -55,9 +55,18 @@ const CardUpload = ({ uploadFile }) => {
         </div>
       </div>
       <p className="font-pop font-medium text-xs text-gray-cBDBDBD">Or</p>
-      <button className="px-4 py-2 rounded-lg bg-blue-c2F80ED font-pop font-medium text-xs text-white">
+      <button
+        onClick={() => document.getElementById("selectImage").click()}
+        className="px-4 py-2 rounded-lg bg-blue-c2F80ED font-pop font-medium text-xs text-white focus:outline-none"
+      >
         Choose a file
       </button>
+      <input
+        id="selectImage"
+        onChange={(e) => uploadFile(e.target.files[0])}
+        type="file"
+        className="hidden"
+      />
     </div>
   )
 }

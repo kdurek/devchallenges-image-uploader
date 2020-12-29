@@ -14,12 +14,7 @@ const Home = ({ firebase }) => {
   const uploadFile = (file) => {
     const storageRef = firebase.storage().ref(`image-uploader/` + file.name)
 
-    const metadata = {
-      contentType: file.type,
-    }
-
-    console.log(metadata)
-    const uploadTask = storageRef.put(file, metadata)
+    const uploadTask = storageRef.put(file)
 
     uploadTask.on(
       "state_changed",

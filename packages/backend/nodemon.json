@@ -1,6 +1,0 @@
-{
-  "watch": ["src", ".env"],
-  "ext": "js,json",
-  "ignore": ["./tests"],
-  "exec": "node ./src/index.js"
-}
