@@ -8,7 +8,7 @@
 
 <div align="center">
   <h3>
-    <a href="TO_CHANGE">
+    <a href="https://devchallenges-image-uploader.vercel.app">
       Demo
     </a>
     <span> | </span>
@@ -40,16 +40,17 @@ In this devchallenge i learned how to upload files and create appriopriate api
 
 ### User Stories
 
-- [ ] I can drag and drop an image to upload it
-- [ ] I can choose to select an image from my folder
-- [ ] I can see a loader when uploading
-- [ ] When the image is uploaded, I can see the image and copy it
-- [ ] I can choose to copy to clipboard
+- [x] I can drag and drop an image to upload it
+- [x] I can choose to select an image from my folder
+- [x] I can see a loader when uploading
+- [x] When the image is uploaded, I can see the image and copy it
+- [x] I can choose to copy to clipboard
 
 ### Built With
 
 - [React](https://nextjs.org/)
 - [Tailwind](https://tailwindcss.com/)
+- [Firebase](https://firebase.google.com/)
 <!-- - [Storybook](https://storybook.js.org/) -->
 
 ## Features
